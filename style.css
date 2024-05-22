@@ -1,43 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'BigSoftie';
+    src: url('fonts/BigSoftie-Fat.otf') format('opentype');
 }
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+body {
     background: #3E3E42;
     color: white;
 }
 
-header{
+header {
     display: flex;
-    background: red;
+    background: #c9530f;
     justify-content: center;
-    width: auto;
-}
-.Top_menu li{
-    display: inline-block;
-    margin-top: 14pt;
-}
-
-.Top_menu a{
-    font-family: sans-serif;
-    font-size: 17px;
-    letter-spacing: 1px;
-    position: relative;
-    text-transform: uppercase;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
+    align-items: center;
     width: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-item a {
+    font-family: 'BigSoftie';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: rgb(245, 245, 245);
-}
-
-.img{
-    width: 50pt;
-    height: 50pt;
-    background: red;
-}
-
-a {
     text-decoration: none;
 }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #c9530f;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    border: 2px solid black;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown a:hover {
+    background-color: #3E3E42;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.img {
+    width: 50pt;
+    height: 50pt;
+}
+
+.basic-img, .uncommon-img, .rare-img, .epic-img, .legendary-img {
+    height: 56px;
+    width: 299px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark-mode {
+    background: #3E3E42;
+    color: white;
+}
+
+.light-mode {
+    background: #FFFFFF;
+    color: #3E3E42;
+}
+
+.toggle_theme {
+    position: absolute;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'BigSoftie';
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #c9530f;
+    color: white;
+}
+
+.zoom {
+    transition: transform 0.3s ease;
+    margin-left: 40px;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+} 
