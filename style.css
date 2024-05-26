@@ -10,13 +10,13 @@
 }
 
 body {
-    background: #3E3E42;
+    background: #062046;
     color: white;
 }
 
 header {
     display: flex;
-    background: #c9530f;
+    background: #008cff;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -53,7 +53,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #c9530f;
+    background-color: #008cff;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,19 +74,19 @@ header {
 }
 
 .dropdown a:hover {
-    background-color: #3E3E42;
+    background-color: #062046;
 }
 
 .menu-item:hover .dropdown {
     display: block;
 }
 
-.img {
+.logo {
     width: 50pt;
     height: 50pt;
 }
 
-.basic-img, .uncommon-img, .rare-img, .epic-img, .legendary-img {
+.basic-img, .uncommon-img, .rare-img, .legendary-img, .mythic-img, .godly-img {
     height: 56px;
     width: 299px;
     margin-top: 20px;
@@ -97,14 +97,25 @@ header {
     margin-right: auto;
 }
 
+.epic-img {
+    height: 60px;
+    width: 299px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .dark-mode {
-    background: #3E3E42;
+    background: #062046;
     color: white;
 }
 
 .light-mode {
     background: #FFFFFF;
-    color: #3E3E42;
+    color: #062046;
 }
 
 .toggle_theme {
@@ -116,15 +127,15 @@ header {
     font-size: 20px;
     text-transform: uppercase;
     border: none;
-    background-color: #c9530f;
+    background-color: #008cff;
     color: white;
 }
 
-.zoom {
+.unit {
     transition: transform 0.3s ease;
     margin-left: 40px;
 }
 
-.zoom:hover {
+.unit:hover{
     transform: scale(1.2);
-} 
+}
