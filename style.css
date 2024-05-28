@@ -12,6 +12,7 @@
 body {
     background: #062046;
     color: white;
+    padding-top: 80px;
 }
 
 header {
@@ -21,7 +22,11 @@ header {
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -62,6 +67,7 @@ header {
     padding: 0;
     margin: 0;
     border: 2px solid black;
+    width: 330px;
 }
 
 .dropdown a {
@@ -73,7 +79,7 @@ header {
 }
 
 .dropdown a:hover {
-    background-color: #9aaaff;
+    background-color: #4254ad;
 }
 
 .menu-item:hover .dropdown {
@@ -137,4 +143,11 @@ header {
 
 .unit:hover {
     transform: scale(1.2);
+}
+
+.cameras, .speakers, .tvs, .drills, .clocks, .other {
+    font-family: 'BigSoftie';
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
 }
