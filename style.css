@@ -46,6 +46,10 @@ header {
     text-transform: uppercase;
     color: rgb(245, 245, 245);
     text-decoration: none;
+    text-shadow: 2px 2px black,  
+                 2px 2px black,
+                 2px 2px black,
+                 2px 2px black;
 }
 
 .dropdown {
@@ -57,12 +61,7 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    min-width: 150px;
     border: 2px solid black;
-}
-
-.dropdown li {
-    width: 100%;
 }
 
 .dropdown a {
@@ -74,7 +73,7 @@ header {
 }
 
 .dropdown a:hover {
-    background-color: #062046;
+    background-color: #9aaaff;
 }
 
 .menu-item:hover .dropdown {
@@ -86,20 +85,9 @@ header {
     height: 50pt;
 }
 
-.basic-img, .uncommon-img, .rare-img, .legendary-img, .mythic-img, .godly-img {
-    height: 56px;
-    width: 299px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.epic-img {
-    height: 60px;
-    width: 299px;
+.title {
+    height: 42px;
+    width: 224,25px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -115,7 +103,7 @@ header {
 
 .light-mode {
     background: #FFFFFF;
-    color: #062046;
+    color: #000;
 }
 
 .toggle_theme {
@@ -129,13 +117,24 @@ header {
     border: none;
     background-color: #008cff;
     color: white;
+    text-shadow: 2px 2px black,  
+                 2px 2px black,
+                 2px 2px black,
+                 2px 2px black;
+}
+
+.unit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+    justify-items: center;
+    grid-gap: 0px;
+    margin-top: 20px;
 }
 
 .unit {
     transition: transform 0.3s ease;
-    margin-left: 40px;
 }
 
-.unit:hover{
+.unit:hover {
     transform: scale(1.2);
 }
